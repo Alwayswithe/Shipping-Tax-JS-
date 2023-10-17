@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping tax</title>
+
+    <link rel="stylesheet" href="Shipping_tax.css">
+</head>
+<body>
+    
+    <div class="form">
+        <p class="Title">Amazon Shipping Calculator</p>
+        <p class="detail_shipping_tax">Orders under $40 = +$10 shipping tax.</p>
+        <p class="detail_shipping_tax">Orders over $40 = <span class="Free">FREE </span>shipping.</p>
+
+        <div class="cost">
+            <input placeholder="Cost of order" class="input_price js_input_price" onkeydown="
+                HandleCostKeyDown(event);   
+            ">
+            <button class="button_calculate js_button_calculate">Calculate</button>
+        </div>
+
+        <p class="Total js_Total">Total price: </p>
+
+    </div>
+    
+
+    <script src="Shipping_tax.js"></script>
+</body>
+</html>
